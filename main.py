@@ -71,8 +71,8 @@ def main():
             print(f"Offset from center: {angle_offset:.2f} degrees")
 
             # Отображение результата на кадре
-            cv2.putText(frame, f"Дистанция: {distance:.2f}м", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-            cv2.putText(frame, f"Угол: {angle_offset:.2f} градусов", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(frame, f"Distance: {distance:.2f}m", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(frame, f"Offset: {angle_offset:.2f} degrees", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         
         # Отображение кадра
         cv2.imshow('Frame', frame)
